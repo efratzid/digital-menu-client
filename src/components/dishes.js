@@ -19,7 +19,7 @@ function Dishes({ categoryId }) {
   }, [categoryId]);
 
   return (
-    <div class="carditem">
+    <div className="carditem">
       {dishes.map((dish) => {
         return (
             <Dishitem key={dish.id} dish={dish}/>
