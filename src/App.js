@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route,Link as RouterLink, Navigate} from 'react-router-dom'
+import { AppBar, Toolbar, Box, Typography,Button,Link } from '@mui/material'
+import Category from './components/category';
+import MainPage from './components/mainPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+        
+        <Routes>
+            <Route path="/dishes" element={<Category/>}/>
+            <Route path="/main" element={<MainPage/>}/>
+            <Route path="/" element={<Navigate to='/main'/>}/>
+        </Routes>
     </div>
   );
 }

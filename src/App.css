@@ -2,6 +2,28 @@
   text-align: center;
 }
 
+body{
+  background-image: url("https://img.lovepik.com/background/20211028/medium/lovepik-delicious-food-barbecue-top-view-white-wooden-background-image_605574746.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.centered-text {    
+  text-align: center;
+  font-size:50px;
+}
+.button{
+  text-align: center;
+  font-size: 25px;
+  border-radius: 30px;
+}
+.carditem{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+ 
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
